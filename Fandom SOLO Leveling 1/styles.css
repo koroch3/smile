@@ -1,0 +1,277 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px; /* reduced padding */
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  font-size: 0.8em; /* reduced font size */
+}
+.navbar {
+  padding: 10px 10px;
+  font-size: 0.6em;
+}
+.navbar {
+  height: 30px; /* set a fixed height */
+}
+.navbar {
+  background-color: #333;
+  padding: 1em;
+  display: flex;
+  justify-content: center; /* Add this to center the nav */
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between; /* Remove this, we don't need it anymore */
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #ccc;
+}
+
+/* Add some CSS to make the navigation bar responsive */
+@media (max-width: 768px) {
+ .navbar {
+    flex-direction: column;
+  }
+ .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+ .nav-links li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+}
+
+/* Container Styles */
+
+.container {
+  width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Styles */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.navbar .logo {
+  max-width: 150px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+.sung-jin-woo {
+  max-width: 100px;
+  height: auto;
+  margin-left: 20px;
+}
+
+/* Section Styles */
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  margin-top: 0;
+}
+
+/* Episode List Styles */
+
+.episode-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.episode-list li {
+  margin-bottom: 10px;
+}
+
+.episode-list li a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.episode-list li a:hover {
+  text-decoration: underline;
+}
+
+/* Fan Art Styles */
+.fan-art img {
+  max-width: 75px; /* set a maximum width for each image */
+  flex-basis: 20%; /* initial width of each image */
+  flex-grow: 1; /* make images take up equal space */
+  height: auto;
+  margin: 10px;
+}
+
+
+
+
+/* Character Styles */
+
+.character {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.character .character-image {
+  max-width: 100px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.character .character-description {
+  flex: 1;
+}
+
+.character .character-description h3 {
+  margin-top: 0;
+}
+
+/* Footer Styles */
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-links {
+    flex-direction: column;
+  }
+  .nav-links li {
+    margin-bottom: 10px;
+  }
+  .footer {
+    padding: 5px;
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+  }
+  .footer {
+    padding: 3px;
+    font-size: 0.6em;
+  }
+}
+.fan-art img {
+  max-width: 200px; /* adjust the maximum width to your desired size */
+  max-height: 200px; /* adjust the maximum height to your desired size */
+  margin: 10px; /* add some margin between images */
+  border-radius: 10px; /* add a slight border radius for a nicer look */
+}
